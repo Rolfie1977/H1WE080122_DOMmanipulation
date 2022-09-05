@@ -25,8 +25,7 @@ function redText() {
 }
 
 
-console.log(button2)
-console.log(paragraffer);
+
 
 
 const button3 = document.getElementById("ex3")
@@ -67,9 +66,35 @@ button5.addEventListener("click", ()=>{
 } )
 
 
-const button6 = document.getElementById("ex5")
+const button6 = document.getElementById("ex6")
 const olList = document.querySelectorAll("ol")
 
 button6.addEventListener("click",()=>{
-    for
+    const newList = document.createElement("li")
+    newList.textContent = "Rasmus styrer"
+    olList[0].appendChild(newList)
+    console.log(button6);
+   
 } )
+
+const button7 = document.getElementById("ex7")
+const listList = document.querySelectorAll("li")
+
+button7.addEventListener("click", changeColor)
+function changeColor()  {
+    for (let i = 0; i < listList.length; i++) {
+        
+
+        if(i%2==0){
+            listList[i].style = "color:red"
+        }
+
+        
+    }
+    
+
+
+}
+
+const button11 = document.getElementById("ex11")
+const body = document.querySelectorAll(body)
